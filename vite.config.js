@@ -11,7 +11,8 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       'react': path.resolve(__dirname, 'node_modules/react'),
-      'react-dom': path.resolve(__dirname, 'node_modules/react-dom')
+      'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
+      'react-router-dom': path.resolve(__dirname, 'node_modules/react-router-dom')
     }
   },
   build: {
@@ -23,6 +24,9 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html')
       }
     }
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom']
   },
   css: {
     devSourcemap: true,

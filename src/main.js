@@ -1,5 +1,5 @@
-import React from '/node_modules/react/index.js'
-import ReactDOM from '/node_modules/react-dom/index.js'
+import React from '../node_modules/react/index.js'
+import ReactDOM from '../node_modules/react-dom/index.js'
 import { HashRouter } from 'react-router-dom'
 import App from './App.js'
 import './index.css'
