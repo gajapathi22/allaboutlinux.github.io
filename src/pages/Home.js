@@ -187,7 +187,7 @@ function Home() {
                 React.createElement(GitHubIcon, { sx: { fontSize: 35 } })
               ),
               React.createElement(Link, {
-                href: "https://linkedin.com/in/yourusername",
+                href: "https://linkedin.com/in/k-gajapathi-85172a23",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 sx: { 
@@ -209,7 +209,7 @@ function Home() {
                 React.createElement(TwitterIcon, { sx: { fontSize: 35 } })
               ),
               React.createElement(Link, {
-                href: "mailto:your.email@example.com",
+                href: "mailto:gajapathikikkara@gmail.com",
                 sx: { 
                   color: '#fff',
                   '&:hover': { color: '#e0e0e0' }
