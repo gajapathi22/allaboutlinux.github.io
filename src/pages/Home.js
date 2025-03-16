@@ -187,7 +187,7 @@ function Home() {
                 React.createElement(GitHubIcon, { sx: { fontSize: 35 } })
               ),
               React.createElement(Link, {
-                href: "https://linkedin.com/in/k-gajapathi-85172a23",
+                href: "https://www.linkedin.com/in/k-gajapathi-85172a23",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 sx: { 
