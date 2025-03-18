@@ -138,7 +138,7 @@ function Home() {
                 boxShadow: '0 2px 5px rgba(0,0,0,0.2)'
               },
               alt: "Author Profile",
-              src: "/path-to-your-image.jpg"
+              src: "/images/profile.png"
             })
           ),
           React.createElement(Box, {
@@ -155,7 +155,7 @@ function Home() {
                 fontWeight: 'bold',
                 color: '#fff'
               }
-            }, "About the Author"),
+            }, "About Me"),
             React.createElement(Typography, { 
               paragraph: true,
               sx: { 
