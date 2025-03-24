@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Distributions from './pages/Distributions';
 import Commands from './pages/Commands';
 import SystemAdmin from './pages/SystemAdmin';
+import DevOpsInterview from './pages/DevOpsInterview';
 
 const theme = createTheme({
   typography: {
@@ -52,6 +53,7 @@ function App() {
         React.createElement(Route, { path: "/distributions", element: React.createElement(Distributions) }),
         React.createElement(Route, { path: "/commands", element: React.createElement(Commands) }),
         React.createElement(Route, { path: "/system-admin", element: React.createElement(SystemAdmin) }),
+        React.createElement(Route, { path: "/devops-interview", element: React.createElement(DevOpsInterview) }),
         React.createElement(Route, { path: "*", element: React.createElement(Navigate, { to: "/" }) })
       )
     )

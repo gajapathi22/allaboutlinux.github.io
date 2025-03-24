@@ -21,7 +21,8 @@ function Navbar() {
     { text: 'Home', path: '/' },
     { text: 'Distributions', path: '/distributions' },
     { text: 'Commands', path: '/commands' },
-    { text: 'System Admin', path: '/system-admin' }
+    { text: 'System Admin', path: '/system-admin' },
+    { text: 'DevOps Interview', path: '/devops-interview' }
   ];
 
   const renderMobileMenu = () => (

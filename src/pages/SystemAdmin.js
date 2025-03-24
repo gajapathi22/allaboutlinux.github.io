@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Typography, Accordion, AccordionSummary, AccordionDetails, Box } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { Container, Typography, Box } from '@mui/material';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 
 const adminTopics = [
@@ -68,7 +67,7 @@ function SystemAdmin() {
         gutterBottom: true 
       }, "System Administration"),
       React.createElement(Typography, { 
-        variant: "h6", 
+        variant: "h8", 
         color: "text.secondary" 
       }, "Essential knowledge and tasks for Linux system administrators")
     ),
@@ -76,7 +75,7 @@ function SystemAdmin() {
       sx: { display: "flex", alignItems: "center", mb: 4 } 
     },
       React.createElement(AdminPanelSettingsIcon, { 
-        sx: { fontSize: 40, mr: 2 }, 
+        sx: { fontSize: 40, mr: 1 }, 
         color: "primary" 
       }),
       React.createElement(Typography, { variant: "h5" },
@@ -84,24 +83,22 @@ function SystemAdmin() {
       )
     ),
     adminTopics.map((topic, index) =>
-      React.createElement(Accordion, { key: index, sx: { mb: 2 } },
-        React.createElement(AccordionSummary, {
-          expandIcon: React.createElement(ExpandMoreIcon),
-          "aria-controls": `panel${index}-content`,
-          id: `panel${index}-header`
-        },
-          React.createElement(Typography, { variant: "h6" }, topic.title)
-        ),
-        React.createElement(AccordionDetails, null,
-          React.createElement(Typography, {
-            component: "pre",
-            sx: {
-              whiteSpace: "pre-wrap",
-              fontFamily: "monospace",
-              fontSize: "0.9rem"
-            }
-          }, topic.content)
-        )
+      React.createElement(Box, { key: index, sx: { mb: 0 } },
+        React.createElement(Typography, { 
+          variant: "h5", 
+          sx: { color: "primary.main", fontWeight: "bold", mb: 0 } 
+        }, topic.title),
+        React.createElement(Typography, {
+          component: "pre",
+          sx: {
+            whiteSpace: "pre-wrap",
+            fontFamily: "monospace",
+            fontSize: "1.2rem",
+            color: "text.primary",
+            lineHeight: 1.6,
+            mt: -3
+          }
+        }, topic.content)
       )
     )
   );
