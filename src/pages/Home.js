@@ -16,7 +16,7 @@ function Home() {
         variant: "h2", 
         component: "h1", 
         gutterBottom: true 
-      }, "Welcome to All About Linux"),
+      }, "Welcome to AAll About Linux"),
       React.createElement(Typography, { 
         variant: "h5", 
         color: "text.secondary", 
@@ -138,7 +138,7 @@ function Home() {
                 boxShadow: '0 2px 5px rgba(0,0,0,0.2)'
               },
               alt: "Author Profile",
-              src: "/path-to-your-image.jpg"
+              src: "/images/profile.png"
             })
           ),
           React.createElement(Box, {
@@ -155,7 +155,7 @@ function Home() {
                 fontWeight: 'bold',
                 color: '#fff'
               }
-            }, "About the Author"),
+            }, "About Me"),
             React.createElement(Typography, { 
               paragraph: true,
               sx: { 
@@ -164,7 +164,7 @@ function Home() {
                 color: '#fff'
               }
             },
-              "Hi! I'm [Your Name], a passionate Linux enthusiast and system administrator with [X] years of experience. " +
+              "Hi! I'm Gajapathi Kikkara, a passionate Linux enthusiast and DevOps Engineer with 2 years of experience. " +
               "I love sharing my knowledge about Linux and helping others master this powerful operating system. " +
               "Through this platform, I aim to make Linux more accessible to everyone."
             ),
@@ -176,7 +176,7 @@ function Home() {
               }
             },
               React.createElement(Link, {
-                href: "https://github.com/yourusername",
+                href: "https://github.com/gajapathi22",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 sx: { 
@@ -187,7 +187,7 @@ function Home() {
                 React.createElement(GitHubIcon, { sx: { fontSize: 35 } })
               ),
               React.createElement(Link, {
-                href: "https://linkedin.com/in/yourusername",
+                href: "https://www.linkedin.com/in/gajapathi22",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 sx: { 
@@ -209,7 +209,7 @@ function Home() {
                 React.createElement(TwitterIcon, { sx: { fontSize: 35 } })
               ),
               React.createElement(Link, {
-                href: "mailto:your.email@example.com",
+                href: "mailto:gajapathikikkara@gmail.com",
                 sx: { 
                   color: '#fff',
                   '&:hover': { color: '#e0e0e0' }
