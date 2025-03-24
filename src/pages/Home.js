@@ -10,7 +10,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import EmailIcon from '@mui/icons-material/Email';
 
 function Home() {
-  return React.createElement(Container, { maxWidth: "lg", sx: { mt: 4 } },
+  return React.createElement(Container, { maxWidth: "lg", sx: { mt: 4 , p:4} },
     React.createElement(Box, { sx: { textAlign: "center", mb: 6 } },
       React.createElement(Typography, { 
         variant: "h2", 
@@ -119,9 +119,16 @@ function Home() {
         React.createElement(Box, { 
           sx: { 
             display: 'flex',
-            flexDirection: 'row',
+            gap: 12,
             alignItems: 'center',
-            gap: 12
+            bgcolor: 'background.paper',
+            p: 4,
+            borderRadius: 2,
+            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+            '&:hover': {
+              transform: 'translateY(-4px)',
+              boxShadow: '0 6px 12px rgba(0, 0, 0, 0.2)',
+            }
           } 
         },
           React.createElement(Box, {
@@ -161,7 +168,8 @@ function Home() {
               sx: { 
                 fontSize: '1.1rem',
                 lineHeight: 1.8,
-                color: '#fff'
+                color: '#fff',
+                
               }
             },
               "Hi! I'm Gajapathi Kikkara, a passionate Linux enthusiast and DevOps Engineer with 2 years of experience. " +

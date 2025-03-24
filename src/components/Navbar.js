@@ -19,10 +19,10 @@ function Navbar() {
 
   const menuItems = [
     { text: 'Home', path: '/' },
-    { text: 'Distributions', path: '/distributions' },
-    { text: 'Commands', path: '/commands' },
+    { text: 'Linux Commands', path: '/linux-commands' },
     { text: 'System Admin', path: '/system-admin' },
-    { text: 'DevOps Interview', path: '/devops-interview' }
+    { text: 'DevOps Interview', path: '/devops-interview' },
+    { text: 'Linux Interview', path: '/linux-interview' }
   ];
 
   const renderMobileMenu = () => (
