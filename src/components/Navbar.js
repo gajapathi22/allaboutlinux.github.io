@@ -48,7 +48,7 @@ function Navbar() {
 
   const handleMenuClick = (path) => {
     handleClose();
-    const sectionId = path.slice(1) || 'home';
+    const sectionId = path === '/' ? 'home' : path.slice(1);
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });

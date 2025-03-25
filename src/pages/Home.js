@@ -267,7 +267,10 @@ function Home() {
   const renderSection = (section) => {
     switch(section) {
       case 'home':
-        return renderHomeContent();
+        return React.createElement(Box, { 
+          component: "section",
+          id: "home"
+        }, renderHomeContent());
       case 'commands':
         return React.createElement(Box, { 
           sx: { mt: 8, pt: 4 },
@@ -275,13 +278,6 @@ function Home() {
           id: "linux-commands"
         },
           React.createElement(Divider, { sx: { mb: 8 } }),
-          React.createElement(Typography, {
-            variant: "h3",
-            component: "h2",
-            gutterBottom: true,
-            textAlign: "center",
-            sx: { mb: 6 }
-          }),
           React.createElement(LinuxCommands)
         );
       case 'systemadmin':
@@ -291,13 +287,6 @@ function Home() {
           id: "system-admin"
         },
           React.createElement(Divider, { sx: { mb: 8 } }),
-          React.createElement(Typography, {
-            variant: "h3",
-            component: "h2",
-            gutterBottom: true,
-            textAlign: "center",
-            sx: { mb: 6 }
-          }),
           React.createElement(SystemAdmin)
         );
       case 'devops':
@@ -307,13 +296,6 @@ function Home() {
           id: "devops-interview"
         },
           React.createElement(Divider, { sx: { mb: 8 } }),
-          React.createElement(Typography, {
-            variant: "h3",
-            component: "h2",
-            gutterBottom: true,
-            textAlign: "center",
-            sx: { mb: 6 }
-          }),
           React.createElement(DevOpsInterview)
         );
       case 'linux':
@@ -323,13 +305,6 @@ function Home() {
           id: "linux-interview"
         },
           React.createElement(Divider, { sx: { mb: 8 } }),
-          React.createElement(Typography, {
-            variant: "h3",
-            component: "h2",
-            gutterBottom: true,
-            textAlign: "center",
-            sx: { mb: 6 }
-          }),
           React.createElement(LinuxInterview)
         );
       default:
